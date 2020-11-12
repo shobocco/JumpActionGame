@@ -18,7 +18,7 @@ android {
     }
     defaultConfig {
         applicationId "jp.techacademy.shirou.ogata.jumpactiongame"
-        minSdkVersion 14
+        minSdkVersion 9
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -90,3 +90,8 @@ task run(type: Exec) {
 }
 
 eclipse.project.name = appName + "-android"
+
+// 下記、追加する
+dependencies {
+    api 'com.google.android.gms:play-services:6.+'
+}
